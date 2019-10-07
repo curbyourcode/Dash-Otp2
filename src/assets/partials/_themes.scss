@@ -23,10 +23,12 @@ body {
     color: #fff;
     background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #fff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     border-color: rgba($navbar-color, .3);
-    text-shadow: 0 23px 26px #B4975A, 0 -1px 0px #fff;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 
     .navbar-brand {
-      color: lighten($navbar-color, 25%);
+    //   color: lighten($navbar-color, 25%);
     }
 
     .left-nav {
@@ -48,11 +50,14 @@ body {
 
       i {
         border-color: $navbar-color;
+        color:#fff;
+        position: relative;
+        bottom: -5px;
         // background: #282f48;
       }
 
       &:hover {
-        color: lighten($navbar-color, 15%);
+        // color: lighten($navbar-color, 15%);
              background: #282f48;
       }
     }

@@ -5,9 +5,11 @@
     <!-- header -->
     <div class='navbar-header pl-2 pr-2 ml-3 text-center'>
       <a class='navbar-brand m-0 w-100' href='#'>
-        <!-- <i class='fa fa-flash mr-1'></i> -->
-        <img src='./assets/img/logo.png' alt='lightning logo' width='35px'>
-        <span class='ml-1'>Lightning</span>
+        <i class='fa fa-flash mr-1'></i>
+        <!-- <img src='./assets/img/logo.png' alt='lightning logo' width='35px'> -->
+        <span class='ml-1'><a class='btn nav-link' (click)='toggleSidebarPin()'><i class='fa fa-bars'></i></a></span>
+        <!-- <i class='fas fa-basketball-ball' style='color:#B54213; font-size: 20px;  position: relative; bottom: -7px;'></i> -->
+        <!-- <span class='ml-1' style='font-size: 18px;  position: relative; bottom: -7px; letter-spacing: .3em; font-family: Poppins, sans-serif'>OPTM</span> -->
       </a>
     </div>
     <!-- sidebar toggler -->
@@ -26,11 +28,11 @@
     <!-- left box -->
     <ul class='navbar-nav flex-fill mt-1 align-items-center left-nav'>
       <li class='nav-item navicon'>
-        <a class='btn nav-link' (click)='toggleSidebarPin()'><i class='fa fa-bars'></i></a>
+        <!-- <a class='btn nav-link' (click)='toggleSidebarPin()'><i class='fa fa-bars'></i></a> -->
       </li>
-      <li class='nav-item flex-fill'>
+      <!-- <li class='nav-item flex-fill'>
         <input class='form-control navbar-search' type='text' placeholder='Search . . .'>
-      </li>
+      </li> -->
     </ul>
   
     <!-- right menu -->
