@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from './../../services/app.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+    isCollapsed = true;
 
-  constructor() { }
+  constructor(private appService: AppService) { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  toggleSidebarPin() {
+      this.appService.toggleSidebarPin();
+  }
+  toggleSidebar() {
+      this.appService.toggleSidebar();
   }
 
 }
