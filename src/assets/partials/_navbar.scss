@@ -11,10 +11,6 @@
           font-size: 1rem;
           font-weight: normal;
           letter-spacing: 2px;
-          margin-left: -50px !important;
-          border-top: 1px solid;
-          padding-top: 1rem;
-          padding-bottom: 1rem;
   
           span {
             display: none;
@@ -25,7 +21,9 @@
       .nav-toggler-right {
         position: relative;
   
+  
         button {
+  
           width: 35px;
           height: 35px;
           padding: 0;
@@ -35,6 +33,7 @@
           border: 1px solid #fff;
   
           img {
+  
             height: 100%;
             width: 100%;
             object-fit: cover;

@@ -1,11 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Modules
 import { AppRoutingModule } from './app-routing.module';
-
 import { ToastrModule } from 'ngx-toastr';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 
@@ -15,6 +14,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { FormsComponent } from './pages/forms/forms.component';
+import { MapsComponent } from './pages/maps/maps.component';
+import { NotificationsComponent } from './pages/notifications/notifications.component';
+import { TablesComponent } from './pages/tables/tables.component';
+import { TypographyComponent } from './pages/typography/typography.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +26,12 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
         FooterComponent,
         NavbarComponent,
         SidebarComponent,
-        DashboardComponent
+        DashboardComponent,
+        FormsComponent,
+        MapsComponent,
+        NotificationsComponent,
+        TablesComponent,
+        TypographyComponent
     ],
     imports: [
         BrowserModule,
